@@ -1,0 +1,24 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs';
+import { Button } from './Button';
+import { typography } from '../tokens'; // Import the tokens
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+The `Button` component uses the following design tokens:
+
+- **Font Size Medium**: `{typography.fontSizeMedium}`
+
+## Usage
+
+Here is how you can use the `Button` component:
+
+<Preview>
+  <Story name="Primary">
+    <Button primary label="Primary Button" />
+  </Story>
+  <Story name="Secondary">
+    <Button label="Secondary Button" />
+  </Story>
+</Preview>
